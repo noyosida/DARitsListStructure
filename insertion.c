@@ -30,6 +30,21 @@ struct vertex *create(int name, int key){
     return p;
 }
 
+// リスト用に確保したメモリを解放
+void freeList(struct vertex *top){
+
+    struct vertex *p, *tmp;
+    
+    p = top;
+
+    while (p != NULL){
+
+        tmp = p;
+        p = p->next;
+        free(tmp);
+    }
+}
+
 int main(void){
 
     struct vertex *top, *p;
@@ -48,6 +63,8 @@ int main(void){
     printf("挿入後\n");
 
     print(top);
+
+    freeList(top);
 
 }
 
