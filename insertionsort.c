@@ -1,3 +1,7 @@
+/* 右のサイトのソースコードを改変しました．https://www.codereading.com/algo_and_ds/algo/source/bubble_sort.c */
+/* ライセンスについては，右のサイトに従います． https://www.codereading.com/copyright.html */
+
+
 #include <stdio.h>
 
 #define NUM_ITEMS 6
@@ -50,6 +54,7 @@ void insertionSort(int numbers[], int array_size)
     }
 }
 
+/* 入れ替え用関数*/
 void swap(int *p_from, int *p_to) {
     int tmp;
     tmp = *p_from;
@@ -57,6 +62,7 @@ void swap(int *p_from, int *p_to) {
     *p_to = tmp;
 }
 
+/* 数列出力用関数*/
 void printArray(int numbers[], int array_size)
 {
     int x;
