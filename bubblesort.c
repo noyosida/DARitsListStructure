@@ -54,6 +54,7 @@ void bubbleSort(int numbers[], int array_size)
   }
 }
 
+/* 数列出力用関数*/
 void printArray(int numbers[], int array_size)
 {
     int x;
