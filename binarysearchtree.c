@@ -1,3 +1,5 @@
+/* https://daeudaeu.com/bintree/ のプログラムを参考にしました．*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
